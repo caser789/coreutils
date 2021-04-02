@@ -8,20 +8,16 @@ fn main() {
         exec("y");
     }
 
-    let cmd = &args[0];
     let option = &args[1];
     match &option[..] {
-        "-h" => help(cmd),
-        "--help" => help(cmd),
+        "-h" => help(),
+        "--help" => help(),
         "-V" => version(),
         "--version" => version(),
         _ => {
             exec(option);
         }
     }
-
-    println!("{:?}", args);
-
 }
 
 fn exec(s: &str) {
@@ -30,17 +26,18 @@ fn exec(s: &str) {
     }
 }
 
-fn help(s: &str) {
+fn help() {
     println!("yes 1.0.0
-Usage:
-    {} [STRING]... [OPTION]...
-
-Options:
-    -h --help display this help and exit
-    -V --version output version information and exit
-
+Xue Jiao <jiao.xuejiao@gmail.com>
 Repeatedly output a line with all specified STRING, or 'y'.
-", s);
+
+Usage:
+    yes [STRING]...
+
+FLAGS:
+    -h, --help       display this help and exit
+    -V, --version    output version information and exit
+");
 }
 
 fn version() {
