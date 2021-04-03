@@ -29,10 +29,10 @@ fn exec(s: &str) {
 fn help() {
     println!("yes 1.0.0
 Xue Jiao <jiao.xuejiao@gmail.com>
-Repeatedly output a line with all specified STRING, or 'y'.
+yes outputs expletive, or, by default, `y`, forever.
 
 Usage:
-    yes [STRING]...
+    yes [expletive]
 
 FLAGS:
     -h, --help       display this help and exit

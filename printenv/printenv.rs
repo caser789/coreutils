@@ -31,10 +31,10 @@ fn exec(key: &str) {
 fn help() {
     println!("printenv 1.0.0
 Xue Jiao <jiao.xuejiao@gmail.com>
-Prints the given environment VARIABLE, otherwise prints them all.
+The printenv utility prints out the names and values of the variables in the environment, with one name/value pair per line.  If name is specified, only its value is printed.
 
 Usage:
-    printenv [STRING]...
+    printenv [name]
 
 FLAGS:
     -h, --help       display this help and exit
